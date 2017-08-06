@@ -8,13 +8,16 @@ def read(fname):
 
 setup(
     name="taskwarrior-scripts",
-    version="0.0.1",
+    version="0.0.2",
     author="Drew Stinnett",
     author_email="drew.stinnett@duke.edu",
     description=("Misc. taskwarrior helper scripts"),
     license="BSD",
     keywords="taskwarrior",
     packages=find_packages(),
-    scripts=['scripts/module_promotion_task.py'],
+    scripts=[
+        'scripts/module_promotion_task.py',
+        'scripts/boss-day-tasks.py'
+    ],
     long_description=read('README.md'),
 )
